@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#1c1d1e">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/noti_image"
+            android:id="@+id/noti_image"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_tv"
+            android:layout_toRightOf="@id/noti_image"
+            android:textSize="20dp"
+            android:layout_marginLeft="@dimen/twenty"
+            android:textColor="@color/toolbar_color"
+            android:text="Charlie waite"
+            android:layout_marginTop="@dimen/twenty"
+            />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginLeft="@dimen/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_tv"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="followed You"
+            android:layout_toRightOf="@id/name_tv"/>
+
+
+        <com.omninos.chroeslammer.Helper.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_tv"
+            android:text="1 min ago"
+            android:textColor="#918888"
+            android:textSize="18dp"
+            android:layout_below="@id/status_tv"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="@dimen/five"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white_color"
+            android:layout_alignParentBottom="true">
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+    </LinearLayout>

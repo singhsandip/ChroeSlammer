@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="@dimen/twenty"
+    android:layout_marginRight="@dimen/twenty">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/ten"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gallery_tv"
+                android:text="GALLERY"
+                android:textSize="23dp"
+                android:textStyle="normal"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/toolbar_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/camera_tv"
+                android:text="CAMERA"
+                android:textSize="23dp"
+                android:textStyle="normal"
+                android:textColor="@color/toolbar_color"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+</LinearLayout>

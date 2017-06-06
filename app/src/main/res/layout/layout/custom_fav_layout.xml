@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    swipe:leftEdgeSwipeOffset="0dp"
+    android:id="@+id/swipe"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0076a5"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#003c54"
+            android:gravity="center"
+            android:text="Share"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0076a5"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+
+
+    <!-- Top View,  Row itemView of RecyclerView -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginLeft="@dimen/twenty">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/bullent_n_text_layout">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/billet"
+                    android:layout_marginTop="@dimen/ten"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fav_chore_name_tv"
+                    android:textColor="@color/toolbar_color"
+                    android:text="user name"
+                    android:textSize="@dimen/twenty"
+                    android:layout_marginLeft="@dimen/ten"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fav_chore_time_tv"
+                android:layout_alignParentRight="true"
+                android:text="time"
+                android:textColor="@color/white_color"
+                android:layout_above="@id/bullent_n_text_layout"
+                android:textSize="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fav_chore_tv"
+            android:layout_alignParentRight="true"
+            android:text="time timetime timetime timevtime timetime time"
+            android:textColor="@color/white_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginTop="@dimen/ten"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_color"
+            android:layout_marginTop="@dimen/ten">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</com.daimajia.swipe.SwipeLayout>

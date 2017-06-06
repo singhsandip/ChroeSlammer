@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "914536218613",
+    "firebase_url": "https://chroeslammer.firebaseio.com",
+    "project_id": "chroeslammer",
+    "storage_bucket": "chroeslammer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914536218613:android:99c4b115f6b7fc08",
+        "android_client_info": {
+          "package_name": "com.onminos.chroeslammer.chroeslammer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914536218613-jpf4lts9bl782lot9sf490r7pubkf1dl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onminos.chroeslammer.chroeslammer",
+            "certificate_hash": "44d369e67e85afb1aacfbc458c98a7e423efef1a"
+          }
+        },
+        {
+          "client_id": "914536218613-rte1bke19683mih01ufplqcjh6i89kj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3pfnb5A_fBsum1RM5-mA7byQXH0tUhPo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914536218613-rte1bke19683mih01ufplqcjh6i89kj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

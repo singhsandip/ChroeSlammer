@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ChroeSlammer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="contractor">Contractor</string>
+    <string name="home_cleaning">Home Cleaning</string>
+    <string name="electrical">Electrical</string>
+    <string name="plumbing">Plumbing</string>
+    <string name="painting">Painting</string>
+    <string name="Moving_Service">Moving Service</string>
+    <string name="landscaping">Landscaping</string>
+</resources>

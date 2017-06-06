@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/tool_bar_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bottom_layout">
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.omninos.chroeslammer.Activities.Project_Details"
+    android:background="@color/login_bottom_layout">
+
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/ten">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/five">
+
+            <com.omninos.chroeslammer.Helper.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_color"
+                android:id="@+id/job_title"
+                android:textSize="15dp"
+                android:text="Lorem Ipsum is simply dummy text"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/job_category"
+                android:textColor="@color/white_color"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/plumbing_btn"
+                android:text="Plumbing"
+                android:textSize="@dimen/ten"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <com.omninos.chroeslammer.Helper.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/job_worker_name"
+            android:textColor="@color/poroject_details_text_color"
+            android:textSize="15dp"
+            android:text="By: Omninos Solutions"
+            android:layout_marginTop="@dimen/ten"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/ten">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.omninos.chroeslammer.Helper.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post:"
+                android:textColor="@color/poroject_details_text_color"/>
+
+            <com.omninos.chroeslammer.Helper.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/created_date"
+                android:text="15 May, 2017"
+                android:textColor="@color/poroject_details_text_color"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/ten">
+
+            <com.omninos.chroeslammer.Helper.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zip Code:"
+                android:textColor="@color/poroject_details_text_color"/>
+
+            <com.omninos.chroeslammer.Helper.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="160016"
+                android:textColor="@color/poroject_details_text_color"/>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.omninos.chroeslammer.Helper.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/description"
+            android:layout_marginTop="@dimen/five"
+            android:textColor="@color/poroject_details_text_color"
+            android:lineSpacingExtra="3dp"
+            android:text="Contractory to popular beleif, Loreum Ipsum is not simply random text. it has roots in a peice of classis Latin literature from 45 BC, making over 2000 years old. Richard McClinktock, a Latin professor at Hampden-Sydney College Virginia,looked up one of the more obscure Latin words."/>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img"
+            android:id="@+id/job_image"
+            android:scaleType="fitXY"
+            android:background="#999292"
+            android:layout_marginTop="15dp"/>
+
+
+        <Button
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/request_btn"
+            android:background="@drawable/request_btn"
+            android:layout_marginTop="@dimen/thirty"
+            android:text="Request"
+            android:textColor="@color/white_color"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/thirty"
+            android:layout_marginRight="@dimen/thirty"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

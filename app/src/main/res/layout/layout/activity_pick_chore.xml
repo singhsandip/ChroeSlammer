@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omninos.chroeslammer.Activities.Post_Chore"
+    android:background="@drawable/bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/forty"
+            android:layout_marginRight="@dimen/forty">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/seventy">
+
+
+                <ImageView
+                    android:id="@+id/img_view_contractor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/contractors"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contractor"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/ten"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/seventy">
+
+
+                <ImageView
+                    android:id="@+id/img_view_home_cleaning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_cleaning"
+                    android:layout_weight="1" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_cleaning"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/ten"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/fifty"
+
+
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten">
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+
+                <ImageView
+                    android:id="@+id/img_view_electrical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/electrical"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/electrical"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/ten"/>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/img_view_plumbing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plumbing"
+                    android:layout_weight="1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plumbing"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="@dimen/ten"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/twenty">
+
+
+
+                <ImageView
+                    android:id="@+id/img_view_painting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/painting"
+                    android:layout_weight="1" />
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/painting"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="@dimen/ten"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/fifty"
+            android:layout_marginLeft="@dimen/forty"
+            android:layout_marginRight="@dimen/forty">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+
+                <ImageView
+                    android:id="@+id/img_view_moving_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/moving_service"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Moving_Service"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/ten"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_view_landscaping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/landscaping"
+                    android:layout_weight="1" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/landscaping"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="@dimen/ten"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

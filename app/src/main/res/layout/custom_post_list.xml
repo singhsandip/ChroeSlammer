@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#fff"
+        android:layout_marginTop="@dimen/five"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginBottom="@dimen/five"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/job_image"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/profile_post_list"
+            android:background="@drawable/post_list_bg"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/twenty">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/worker_name_tv"
+                android:textSize="18dp"
+                android:textColor="#736363"
+                android:text="Pankaj Thakur"/>
+
+            <com.omninos.chroeslammer.Helper.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/job_title_tv"
+                android:text="Home Cleaning"
+                android:textColor="#736363"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginLeft="@dimen/sixty">
+
+                <com.omninos.chroeslammer.Helper.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ten"
+                    android:textColor="@color/post_list_color"
+                    android:text="0.42 Miles"
+                    android:layout_marginLeft="@dimen/ten"/>
+
+                <com.omninos.chroeslammer.Helper.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 years"
+                    android:textColor="@color/post_list_color"
+                    android:textSize="@dimen/ten"
+                    android:layout_marginTop="@dimen/five"
+                    android:layout_marginLeft="@dimen/twenty"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/post_list_color">
+
+            </LinearLayout>
+
+            <com.omninos.chroeslammer.Helper.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999595"
+                android:id="@+id/job_description"
+                android:text="life is too short too clearn your own home! our team at the aleaning authority is here for you. We provide the elite cleaning services design to keep your home sparkling and beautiful so that you can focus on things that matter more, like your friends and family"
+                android:textSize="10dp"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

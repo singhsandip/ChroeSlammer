@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    android:id="@+id/swipe"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#18aeef">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/close_image_view"
+            android:src="@drawable/close"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginLeft="@dimen/thirty"/>
+
+    </LinearLayout>
+
+
+
+    <!-- Top View,  Row itemView of RecyclerView -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginLeft="@dimen/twenty">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/bullent_n_text_layout">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/billet"
+                    android:layout_marginTop="@dimen/ten"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fav_chore_name_tv"
+                    android:textColor="@color/toolbar_color"
+                    android:text="Charlie Waite"
+                    android:textSize="@dimen/twenty"
+                    android:layout_marginLeft="@dimen/ten"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fav_chore_time_tv"
+                android:layout_alignParentRight="true"
+                android:text="time"
+                android:textColor="@color/white_color"
+                android:layout_above="@id/bullent_n_text_layout"
+                android:textSize="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"/>
+
+        </RelativeLayout>
+
+        <com.omninos.chroeslammer.Helper.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fav_chore_tv"
+            android:layout_alignParentRight="true"
+            android:text="Loreum Ipsum is simply dummy text of the printing and typing industry.Lorum Ipsum has been"
+            android:textColor="@color/white_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginTop="@dimen/ten"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white_color"
+            android:layout_marginTop="@dimen/ten">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</com.daimajia.swipe.SwipeLayout>

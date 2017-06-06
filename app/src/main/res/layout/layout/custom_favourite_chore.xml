@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/twenty">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/bullent_n_text_layout">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/billet"
+            android:layout_marginTop="@dimen/ten"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fav_chore_name_tv"
+            android:textColor="@color/toolbar_color"
+            android:text="user name"
+            android:textSize="@dimen/twenty"
+            android:layout_marginLeft="@dimen/ten"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fav_chore_time_tv"
+            android:layout_alignParentRight="true"
+            android:text="time"
+            android:textColor="@color/white_color"
+            android:layout_above="@id/bullent_n_text_layout"
+            android:textSize="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_chore_tv"
+        android:layout_alignParentRight="true"
+        android:text="time timetime timetime timevtime timetime time"
+        android:textColor="@color/white_color"
+        android:textSize="17dp"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginTop="@dimen/ten"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_color"
+        android:layout_marginTop="@dimen/ten">
+
+    </LinearLayout>
+
+</LinearLayout>

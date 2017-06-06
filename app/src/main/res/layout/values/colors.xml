@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18aeef</color>
+    <color name="colorPrimaryDark">#18aeef</color>
+    <color name="colorAccent">#18aeef</color>
+
+    <color name="login_bottom_layout">#151515</color>
+    <color name="white_color">#fff</color>
+    <color name="toolbar_color">#18aeef</color>
+</resources>

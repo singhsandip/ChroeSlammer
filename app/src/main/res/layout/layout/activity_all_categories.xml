@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg" android:orientation="vertical"
+    tools:context="com.omninos.chroeslammer.Activities.MainActivity"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/tools ">
+
+    <android.support.v4.widget.DrawerLayout android:id="@+id/drwaer_layout"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                android:weightSum="5" android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_weight="1"></LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                    android:gravity="center" android:weightSum="2" android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:gravity="center" android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:src="@drawable/contractors" />
+
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Contractors"
+                            android:layout_marginTop="10dp" android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:gravity="center" android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:src="@drawable/home_cleaning" />
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Home Cleaning"
+                            android:layout_marginTop="10dp" android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                    android:weightSum="3" android:layout_weight="1" android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:gravity="center" android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/electrical" />
+
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Electrical"
+                            android:layout_marginTop="10dp" android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:gravity="center" android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:src="@drawable/plumbing" />
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Plumbing"
+                            android:layout_marginTop="10dp" android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:gravity="center" android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:src="@drawable/painting" />
+
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Painting"
+                            android:layout_marginTop="10dp" android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="match_parent" android:weightSum="2"
+                    android:layout_weight="1" android:layout_height="0dp"
+                    android:layout_marginTop="15dp" android:orientation="horizontal">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:gravity="center" android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/moving_service" />
+
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Moving Service"
+                            android:layout_marginTop="10dp" android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:gravity="center" android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/landscaping" />
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="Landscaping"
+                            android:layout_marginTop="10dp" android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_weight="1"></LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <fragment android:id="@+id/mainImagesList"
+            android:name="com.omninos.chroeslammer.Fragments.DrawerFragment"
+            android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:layout_gravity="start" tools:layout="@layout/fragment_drawer"></fragment>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
